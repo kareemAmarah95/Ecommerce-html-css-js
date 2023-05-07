@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Page</title>
+
+
+  <!--Swiper Cdn Css-->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+
+  <!--Google fonts Link-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <!--FontAwesome CSS-->
+    <link rel="stylesheet" href="../css/all.min.css">
+
+    <!--Bootstrap Css--->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!--Normalize.css-->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!--Owl Carousel.css-->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+
+  <!--Login Page Css-->
+  <link rel="stylesheet" href="../css/login-page.css">
+
+    <!--Contact Form Css-->
+    <link rel="stylesheet" href="../css/contact-form.css">
+
+    <!--CSS File-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!--Mini Navbar Start-->
+    <nav class="mini-navbar">
+        <div class="container">
+            <div class="header-top-inner">
+                   
+                      <div class="cnt-account">
+                        <ul class="list-unstyled d-flex ul-parent">
+                            <li><a class="text-decoration-none" href="#"><i class="icon fa fa-user me-2"></i><span class="user"></span></a></li>
+                            <li><a class="text-decoration-none" href="#"><i class="icon fa fa-heart me-2"></i>Wishlist</a></li>
+                            <li><a class="text-decoration-none" href="#"><i class="icon fa fa-shopping-cart me-2"></i>My Cart</a></li>
+                            <li><a class="text-decoration-none" href="#"><i class="icon fa fa-check me-2"></i>Checkout</a></li>
+                            <li><a class="text-decoration-none" href="#"><i class="icon fa fa-lock me-2"></i>Login</a></li>
+                         </ul>
+                      </div>
+                      <div class="cnt-block">
+                        <ul class="list-unstyled d-flex list-inline ul-parent">
+                            
+                                <li class="dropdown dropdown-small li-child">
+                                    <!-- <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">USD </span><b class="caret"></b></a> -->
+                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="value">USD </span><b class="caret"></b>
+                                      </a>
+                                    <ul class="dropdown-menu bg-dark">
+                                        <li><a class="dropdown-item text-dark" href="#">USD</a></li>
+                                        <li><a class="dropdown-item text-dark" href="#">INR</a></li>
+                                        <li><a class="dropdown-item text-dark" href="#">GBP</a></li>
+                                    </ul>
+                                </li>
+            
+                                <li class="dropdown dropdown-small">
+                                    <!-- <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">English </span><b class="caret"></b></a> -->
+                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="value">English</span><b class="caret"></b>
+                                      </a>
+                                    <ul class="dropdown-menu bg-dark">
+                                        <li><a class="dropdown-item text-dark color-dark" href="#">English</a></li>
+                                        <li><a class="dropdown-item text-dark color-dark" href="#">French</a></li>
+                                        <li><a class="dropdown-item text-dark color-dark" href="#">German</a></li>
+                                    </ul>
+                                </li>
+
+                            
+                           
+                        </ul><!-- /.list-unstyled -->
+                    </div>
+                      <div class="clearfix"></div>
+            </div>
+        </div>
+    </nav>
+    <!--Mini Navbar End-->
+  <!--First Navbar Start-->
+  <nav class="first-nav">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
+                     <!--Logo start-->
+                         <img src="../images/images task 6/ecommerce_logo_2.png" alt="ecommerce_logo">
+                     <!--Logo end-->
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-7">
+              <div class="top-search-holder">
+                <!-- option bar and Input and search icon start-->
+                <div class="dropdown">
+                  <button class="dropdown-toggle dropdown-toggle-two" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categories
+                  </button>
+                  <ul class="dropdown-menu ul-edit">
+                    <li><a class="dropdown-item text-dark" href="#">Computer</a></li>
+                    <li><a class="dropdown-item text-dark" href="#">-Clothing</a></li>
+                    <li><a class="dropdown-item text-dark" href="#">-Electronics</a></li>
+                    <li><a class="dropdown-item text-dark" href="#">-Shoes</a></li>
+                    <li><a class="dropdown-item text-dark" href="#">-Watches</a></li>
+                  </ul>
+                </div>
+                  <input type="text" placeholder="search here...">
+                  <a class="search-button" href="#">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+              <!-- option bar and Input and search icon end-->
+               </div>
+            </div>
+    
+            <div class="col-xs-12 col-sm-12 col-md-2 animate-dropdown top-cart-row">
+                <div class="basket">
+                    <span>
+                      <a href="shopping-cart-page.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </span>
+                </div>
+
+                <div class="basket-item-count">
+                    <div class="count">2</div>
+                    <div class="vertical-line"></div>
+
+                    
+                </div>
+
+                <div class="total-price-basket">
+					<span class="lbl">cart -</span>
+					<span class="total-price">
+						<span class="sign">$</span><span class="value">600.00</span>
+					</span>
+				</div>
+                 
+            </div>
+        
+        <!--add to cart start-->
+        <!--add to cart end-->
+        </div>
+    </div>
+  </nav>
+       
+  <!--First Navbar End-->
+  <!--Main navbar Start-->
+  <div class="header-nav">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary third-navbar">
+        <div class="container">
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon ">
+              <i class="fa-solid fa-bars text-white"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse parent-navbar-nav" id="navbarSupportedContent">
+            
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center list-relative-parent">
+                <li class="nav-item active-one list-item ">
+                  <a class="nav-link active text-white" aria-current="page" href="../index.html">HOME</a>
+                </li>
+                <li class="nav-item list-item clothing-relative">
+                  <a class="nav-link text-white" href="#">CLOTHING</a>
+                    
+                  <ul class="clothing-dropdown-menu container">
+                        <li class="list-unstyled ">
+                          <div class="padding-content">
+                              <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                                    <h2 class="title">
+                                      Men
+                                    </h2>
+                                    <ul class="links">
+                                      <li>
+                                        <a href="#">Dresses</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Shoes</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Jackets</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Sunglasses</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Sport Wear</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Blazers</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Shirts</a>
+                                      </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                                    <h2 class="title">
+                                      Women
+                                    </h2>
+                                    <ul class="links">
+                                      <li>
+                                        <a href="#">Handbags</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Jwellery</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Swimwear</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Tops</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Flats</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Shoes</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Winter Wear</a>
+                                      </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                                    <h2 class="title">
+                                      Boys
+                                    </h2>
+                                    <ul class="links">
+                                      <li>
+                                        <a href="#">Toys & Games</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Jeans</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Shirts</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Shoes</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">School Bags</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Lunch Box</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Footwear</a>
+                                      </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                                    <h2 class="title">
+                                      Girls
+                                    </h2>
+                                    <ul class="links">
+                                      <li>
+                                        <a href="#">Sandals</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Shorts</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Dresses</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Jwellery</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Bags</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Night Dress</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">Swim Wear</a>
+                                      </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                                    <img src="../images/images task 6/top-menu-banner-2.jpeg" alt="sidenavbar-image" class="image-responsive">
+                                </div>
+                              </div>
+                          </div>
+                        </li>
+                  </ul> 
+                </li>
+                <li class="nav-item list-item ">
+                  <a class="nav-link text-white" href="#">ELECTRONICS</a>
+                </li>
+                <li class="nav-item list-item ">
+                  <a class="nav-link text-white" href="#">HEALTH & BEAUTY</a>
+                </li>
+                <li class="nav-item list-item ">
+                  <a class="nav-link text-white" href="#">WATCHES</a>
+                </li>
+                <li class="nav-item list-item ">
+                  <a class="nav-link text-white" href="#">JEWELLERY</a>
+                </li>
+                <li class="nav-item list-item ">
+                  <a class="nav-link text-white" href="#">SHOES</a>
+                </li>
+                <li class="nav-item list-item ">
+                  <a class="nav-link text-white" href="compare.html">COMPARE</a>
+                </li>
+                <li class="nav-item list-item ">
+                  <a class="nav-link text-white" href="contact_form.html">CONTACT FORM</a>
+                </li>
+                <li class="nav-item navbar-right list-item ">
+                  <a class="nav-link text-warning" href="login-page.html">LOGIN</a>
+                </li>
+                <div class="clearfix"></div>  
+
+                </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+  </div>
+
+
+  <!--Main navbar End-->
+
+  <!--Contact Form Start-->
+  <section id="contact-form">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">
+                        Contact Form 
+                    </h2>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-12">
+                    <div class="wrapper">
+                        <div class="row no-gutters">
+                                <div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch ps-0 pe-0">
+                                        <div class="contact-wrap w-100 p-md-5 p-4">
+                                                <h3 class="mb-4">Get in touch</h3>
+                                                <form method="POST" action="" id="contactForm">
+                                                    <div class="row">
+                                                            <div class="col-md-6 mb-3">
+                                                                <div class="form-group">
+                                                                        <label class="label" for="name">Full Name</label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Full-Name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 mb-3">
+                                                                <div class="form-group">
+                                                                    <label class="label" for="email">Email Address</label>
+                                                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 mb-3">
+                                                                <div class="form-group">
+                                                                    <label class="label" for="subject">Subject</label>
+                                                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 mb-3">
+                                                                <div class="form-group">
+                                                                    <label class="label" for="message">Message</label>
+                                                                    <textarea type="text" class="form-control" name="message" id="message" placeholder="Message" cols="30" rows="4"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 mb-3">
+                                                                <div class="form-group">
+                                                                    <input type="submit" value="Send Message" class="btn btn-primary mt-3 submitBtn">
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                </form>
+                                        </div>
+                                </div>
+                                <div class="col-lg-4 col-md-5 d-flex align-items-stretch ps-0 pe-0">
+                                    <div class="info-wrap w-100 p-md-5 p-4">
+                                        <h3 class="mb-4">Lets get in touch</h3>
+                                        <p class="mb-4">
+                                            We're open for any suggestion or just to have a chat
+                                        </p>
+                                        <div class="dbox w-100 d-flex align-items-center">
+                                            <div class="icon d-flex justify-content-center align-items-center">
+                                                <span class="fa-solid fa-location-dot"></span>
+                                            </div>
+                                            <div class="text ps-3">
+                                                <p class="para-desc">
+                                                    <span>Address:</span>
+                                                    198 West 21th Street, Suite 721 New York NY 10016
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="dbox w-100 d-flex align-items-center">
+                                            <div class="icon d-flex justify-content-center align-items-center">
+                                                <span class="fa-solid fa-phone"></span>
+                                            </div>
+                                            <div class="text ps-3">
+                                                <p>
+                                                    <span>Phone:</span>
+                                                    <a href="tel://1234567920">+ 1235 2355 98</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="dbox w-100 d-flex align-items-center">
+                                            <div class="icon d-flex justify-content-center align-items-center">
+                                                <span class="fa-solid fa-paper-plane">
+                                                </span>
+                                            </div>
+                                            <div class="text email ps-3">
+                                                <p>
+                                                    <span>Email:</span>
+                                                    <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="dbox w-100 d-flex align-items-center">
+                                            <div class="icon d-flex justify-content-center align-items-center">
+                                                <span class="fa-solid fa-earth-americas"></span>
+                                            </div>
+                                            <div class="text ps-3">
+                                                <p>
+                                                    <span>Website</span>
+                                                    <a href="#">yourSite.com</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+
+
+  <!--Contact Form End-->
+
+
+
+  <!--Footer Start-->
+
+<footer id="footer">
+    <div class="footer-bottom">
+      <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="module-heading">
+                    <h4 class="module-title">
+                        Contact Us
+                    </h4>
+                </div>
+                <div class="module-body">
+                    <ul class="unordered-footer-links">
+                      <li class="media">
+                        <div class="left-part">
+                          <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="right-part">
+                          <p class="media-info">
+                            ThemesGround, 789 Main rd, Anytown, CA 12345 USA
+                          </p>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="left-part">
+                          <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <div class="right-part">
+                          <p class="media-info">
+                            +(888) 123-4567<br>+(888) 456-7890
+                          </p>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="left-part">
+                          <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="right-part">
+                          <p class="media-info">
+                            flipmart@themesground.com
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="module-heading">
+                    <h4 class="module-title">
+                        Customer Service
+                    </h4>
+                </div>
+                <div class="module-body">
+                    <ul class="edit-ul-style">
+                      <li class="module-link">
+                        <a class="media-link" href="#">My Account</a>
+                      </li>
+                      <li class="module-link">
+                        <a class="media-link" href="#">Order History</a>
+                      </li>
+                      <li class="module-link">
+                        <a class="media-link" href="#">FAQ</a>
+                      </li>
+                      <li class="module-link">
+                        <a class="media-link" href="#">Specials</a>
+                      </li>
+                      <li class="module-link">
+                        <a class="media-link" href="#">Help Center</a>
+                      </li>
+                     
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="module-heading">
+                    <h4 class="module-title">
+                        Corporation
+                    </h4>
+                </div>
+                <div class="module-body">
+                    <ul class="edit-ul-style">
+                      <li class="module-link">
+                        <a class="media-link" href="#">About us</a>
+                      </li>
+                      <li class="module-link">
+                        <a class="media-link" href="#">Customer Service</a>
+                      </li>
+                      <li class="module-link">
+                        <a class="media-link" href="#">Company</a>
+                      </li>
+                      <li class="module-link">
+                        <a class="media-link" href="#">Investor Relations</a>
+                      </li>
+                      <li class="module-link">
+                        <a class="media-link" href="#">Advanced Search</a>
+                      </li>
+                     
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="module-heading">
+                    <h4 class="module-title">
+                        why choose us
+                    </h4>
+                </div>
+                <div class="module-body">
+                    <ul class="edit-ul-style">
+                      <li class="module-link">
+                        <a class="media-link" href="#">Shopping Guide</a>
+                      </li>
+                      <li class="module-link">
+                        <a class="media-link" href="#">Blog</a>
+                      </li>
+                      <li class="module-link">
+                        <a class="media-link" href="#">Company</a>
+                      </li>
+                      <li class="module-link">
+                        <a class="media-link" href="#">Investor Relations</a>
+                      </li>
+                      <li class="module-link">
+                        <a class="media-link" href="#">Contact Us</a>
+                      </li>
+                     
+                    </ul>
+                </div>
+            </div>
+           
+          </div>
+      </div>
+    </div>
+    <div class="copyright-bar">
+        <div class="container">
+          <div class="row edit-media">
+            <div class="col-xs-12 col-sm-6">
+                <ul class="link">
+                    <li class="shape">
+                      <a class="fb" href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="shape">
+                      <a class="twitter" href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="shape">
+                      <a class="google-plus" href="#">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                      </a>
+                    </li>
+                    <li class="shape">
+                      <a class="wifi" href="#">
+                        <i class="fa-solid fa-wifi"></i>
+                      </a>
+                    </li>
+                    <li class="shape">
+                      <a class="pinterest" href="#">
+                        <i class="fa-brands fa-square-pinterest"></i>
+                      </a>
+                    </li>
+                    <li class="shape">
+                      <a class="linkedin" href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li class="shape">
+                      <a class="youtube" href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <ul class="link second-links justify-content-end">
+                    <li>
+                      <img src="../images/images task 6/footer-1.png" alt="">
+                    </li>
+                    <li class="ms-3">
+                      <img src="../images/images task 6/footer-2.png" alt="">
+                    </li>
+                    <li class="ms-3">
+                     <img src="../images/images task 6/footer-3.png" alt="">
+                    </li>
+                    <li class="ms-3">
+                      <img src="../images/images task 6/footer-4.png" alt="">
+                    </li>
+                    <li class="ms-3">
+                        <img src="../images/images task 6/footer-5.png" alt="">
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  </footer>
+  
+  
+  
+  
+  
+  <!--Footer End-->
+  
+  
+    <!--Swiper Cdn Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  
+      <!--Jquery File-->
+      <script src="../js/jquery-3.6.3.min.js"></script>  
+      <!--Bootstrap Js File-->
+      <script src="../js/bootstrap.bundle.min.js"></script>
+  
+  
+      <!--Script js FontAwesome-->
+      <script src="../js/all.min.js"></script>
+  
+  
+    <!--Script Owl Carousel-->
+    <script src="../js/owl.carousel.min.js"></script>
+
+  <!--contact form .js-->
+  <script src="../js/contact_form.js"></script>
+
+     <!--Js file --> 
+     <script src="../js/login-page.js"></script>
+  </body>
+  </html>
